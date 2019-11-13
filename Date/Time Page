@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height = "match_parent"
+    android:layout_width = "match_parent"
+    android:background="#000000">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/massage" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_alignParentBottom="true"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Therapist Gender"
+                android:textColor="#ffffff "
+                android:id="@+id/gender"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/male"
+                android:textColor="#ffffff "
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/gender"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/male"
+                android:text="Either"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/either"
+                android:textColor="#ffffff " />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/either"
+                android:text="Female"
+                android:textColor="#ffffff " />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Massage Time"
+                android:layout_marginTop="100dp"
+                android:textColor="#ffffff "
+                android:id="@+id/time"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60 min"
+                android:id="@+id/time_60"
+                android:textColor="#ffffff "
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/time"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/time_60"
+                android:text="90 min"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/time_90"
+                android:textColor="#ffffff " />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_alignParentBottom="true"
+                android:text="120 min"
+                android:textColor="#ffffff "
+                android:layout_toRightOf="@+id/time_90" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date/Time"
+                android:id="@+id/date_time"
+                android:layout_marginTop="200dp"
+                android:textColor="#ffffff "
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT DATE"
+                android:textColor="#ffffff "
+                android:id="@+id/btn_date"
+                android:layout_alignBottom="@+id/in_date"
+                android:layout_toRightOf="@+id/in_date"
+                android:layout_toEndOf="@+id/in_date" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/in_date"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/date_time"
+                android:textColor="#ffffff "
+                 />
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff "
+                android:text="SELECT TIME"
+                android:id="@+id/btn_time"
+                android:layout_below="@+id/btn_date"
+                android:layout_alignLeft="@+id/btn_date"
+                android:layout_alignStart="@+id/btn_date" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff "
+                android:id="@+id/in_time"
+                android:layout_below="@+id/in_date"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>
